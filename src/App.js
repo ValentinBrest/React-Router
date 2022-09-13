@@ -3,6 +3,7 @@ import './App.css';
 import Layout from './components/Layout';
 import RequireAuth from './hoc/RequireAuth';
 import AboutPage from './pages/AboutPage';
+import AuthProvider from './hoc/AuthProvider';
 import BlogPage from './pages/BlogPage';
 import EditPage from './pages/EditPage';
 import HomePage from './pages/HomePage';
@@ -12,7 +13,7 @@ import SinglePage from './pages/SinglePage';
 
 function App() {
   return (
-      <>
+      <AuthProvider>
           <Routes>
               <Route path="/" element={<Layout />}>
                   <Route index element={<HomePage />} />
@@ -32,7 +33,7 @@ function App() {
                   <Route path="*" element={<NotfoundPage />} />
               </Route>
           </Routes>
-      </>
+      </AuthProvider>
   );
 }
 

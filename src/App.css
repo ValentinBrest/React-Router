@@ -33,6 +33,10 @@ a:hover {
 	color: blue;
 }
 
+.active-link {
+	color: white;
+}
+
 .page {
 	text-align: center;
 	padding-top: 30px;

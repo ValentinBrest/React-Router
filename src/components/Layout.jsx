@@ -9,8 +9,8 @@ const Layout = () => {
         <>
             <header>
                 <NavLink to="/" className={setActive}>Home</NavLink>
-                <CunstomLink to="/blog" className={setActive}>Blog</CunstomLink> 
-                <CunstomLink to="/about" className={setActive}>About</CunstomLink>
+                <CunstomLink to="/posts">Blog</CunstomLink> 
+                <CunstomLink to="/about">About</CunstomLink>
             </header>
             <Outlet />
             <footer>2022</footer>

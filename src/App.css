@@ -24,3 +24,26 @@ a {
 a:hover {
 	color: blue;
 }
+
+.page {
+	text-align: center;
+	padding-top: 30px;
+	font-size: 18px;
+	height: 100vh;
+}
+
+.about {
+	background-color: rgb(73, 165, 73);
+}
+
+.blog {
+	background-color: rgb(73, 165, 156);
+}
+
+.home {
+	background-color: rgb(154, 165, 73);
+}
+
+.not {
+	background-color: rgb(165, 85, 73);
+}

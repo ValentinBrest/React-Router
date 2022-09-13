@@ -1,7 +1,23 @@
-import React from 'react';
+import React, { useState, useEffect }from 'react';
+import { Link } from 'react-router-dom';
 
 const BlogPage = () => {
-	return <div className="page blog">This is a Blog Page!</div>;
+	const [posts, setPosts] = useState([]);
+
+	useEffect(() => {
+		fetch('https://jsonplaceholder.typicode.com/posts')
+            .then((response) => response.json())
+            .then((data) => setPosts(data));
+	}, []);
+	return <div className="page blog">
+		{
+			posts.map(post => (
+				<Link key={post.id} to={`/posts/${post.id}`}>
+					<li>{post.title}</li>
+				</Link>
+			))
+		}
+	</div>;
 };
 
 export default BlogPage;

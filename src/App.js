@@ -1,8 +1,17 @@
+import './App.css'
 
 function App() {
   return (
-    <div className="App">
-    </div>
+      <>
+          <header>
+              <a href="">Home</a>
+              <a href="">Blog</a>
+              <a href="">About</a>
+          </header>
+          <div>
+              <h1>Get started with React Router</h1>
+          </div>
+      </>
   );
 }
 
